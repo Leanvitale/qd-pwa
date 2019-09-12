@@ -1,0 +1,39 @@
+button:focus {
+    outline: 0;
+}
+
+h1 {
+    font-size: 21px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.input-contact {
+    border-radius: 27px;
+    border: 0px;
+    background: #F8F8F8;
+    color: #2d2d2d;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bg-form {
+    max-width: 300px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn-primary-qd {
+    padding: 9px 24px !important;
+    border: 0px !important;
+    margin-top: 9px;
+    margin-bottom: 15px;
+}
+
+.btn-back {
+    background: #f7f7f7;
+    color: #929292;
+    font-weight: 400;
+}

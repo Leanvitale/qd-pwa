@@ -1,0 +1,58 @@
+<div class="container-cards shadow-card text-center" >
+    
+    <img    src="https://i.imgur.com/XY4Bf5f.jpg"
+            alt="Nombre de la Campaña" 
+            class="cardImg">
+
+    <div class="fix-btn">
+        <a  [routerLink]="['/ongs']"
+            class="btn-primary-qd shadow-card">
+            Quiero Donar
+        </a>
+    </div>
+
+    <!-- Cuerpo Evento -->
+    <div *ngIf="!shared">
+        <!-- Body Card -->
+        <div class="bd-card">
+            <h3 class="text-left">Salvemos el Amazonas</h3>
+    
+            <p class="intro">
+                {{ description | truncate:['90', '..'] }}
+            </p>
+    
+            <h4 class="text-left">
+                <img [src]="imgOng" alt="" class="imgOng">
+                {{ institucion | truncate:['33', '..'] }}
+                
+            </h4>
+        </div>
+    
+        <!-- Progress Bar -->
+        <div class="container-progress">
+            <progress value="76" max="100"></progress>
+            <div class="txt-collected"><span style="font-weight: 600;">$217.700 recaudados</span> de $325.000</div>
+        </div>
+    
+        <!-- Bottom Bar -->
+        <div class="row align-items-center fix-space">
+            <!-- Compartir Button -->
+            <div (click)="changeShared();" class="col-6 align-self-center fix-space">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </div>
+            <!-- Go Profile Button -->
+            <a [routerLink]="['/perfil']" class="col-6 align-self-center fix-space btn-profile">
+                Perfil Causa
+            </a>
+        </div>
+    </div>
+    <!-- Fin Cuerpo Evento -->
+
+    <!-- Compartir Cuerpo -->
+    <div class="mt-4" *ngIf="shared">
+        <i class="fa fa-times-circle" aria-hidden="true" (click)="changeShared();"></i>
+        <app-shared></app-shared>
+    </div>
+    <!-- Fin Compartir Cuerpo -->
+
+</div>

@@ -1,0 +1,16 @@
+<h2>Comentarios de<br>Nuestra Comunidad:</h2>
+
+<div class="scrolling-wrapper" *ngIf="comments" [ngStyle]="{'background-image': 'url(' + bgComment + ')'}" >
+    <div class="card shadow-card text-center" *ngFor="let comment of comments">
+        <img [src]="comment.img" class="imgCard">
+        <h6>{{ comment.name }}</h6>
+        <span class="location">{{ comment.location }}</span>
+        <hr>
+        <p class="comment">
+            {{ comment.comment }}
+        </p>
+        <div class="text-right">
+            <span class="cita">{{ comment.position }}</span>
+        </div>
+    </div>
+</div>

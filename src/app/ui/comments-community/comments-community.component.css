@@ -1,0 +1,71 @@
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding: 21px;
+}
+
+.scrolling-wrapper .card {
+    display: inline-block;
+    white-space: initial;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+.card {
+    width: 85%;
+    border: 0px;
+    margin: 0px 15px;
+    margin-top: 50px;
+    padding: 21px;
+    color: #2D2D2D;
+    padding-top: 50px;
+    border-radius: 27px;
+    background: #F6F6F6;
+}
+
+.imgCard {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    margin: 0 auto;
+    position: absolute;
+    top: -45px;
+    right: 0;
+    left: 0;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.06), 0 3px 3px rgba(0,0,0,0.06);
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 9px;
+    margin-bottom: 0px;
+}
+
+.location {
+    font-weight: 300;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.comment {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+hr {
+    width: 81%;
+    border-top: 1px solid #ccc;
+    margin: 9px auto;
+}
+
+.cita {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 12px;
+    margin-right: 9px;
+}

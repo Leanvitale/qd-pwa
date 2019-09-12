@@ -1,0 +1,32 @@
+.row {
+    padding: 0px;
+    margin: 0px;
+}
+
+.col-auto {
+    padding: 0px;
+    margin: 0px; 
+}
+
+.logo {
+    width: auto;
+    height: 36px;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    background: #FFFFFF;
+    width: 100%;
+    padding: 9px 21px;
+    z-index: 1;
+}
+
+.fa {
+    font-size: 21px;
+    color: #0080ff;
+}
+
+.profile-img {
+    margin-left: 15px;
+}

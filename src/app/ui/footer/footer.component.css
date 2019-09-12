@@ -1,0 +1,33 @@
+.container-footer {
+    background: #4D86FF;
+    width: 100%;
+    padding: 30px 21px;
+    color: white;
+    font-size: 600;
+    border-radius: 27px 27px 0px 0px;
+    padding-bottom: 75px;
+}
+
+.imgLogo {
+    width: auto;
+    height: 36px;
+}
+
+.hiper-footer {
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.fa {
+    font-size: 18px;
+    border-radius: 60px;
+    width: 30px;
+    border: 1px solid white;
+    padding: 5px;
+    height: 30px;
+    text-align: center;
+    margin: 3px 0px;
+    cursor: pointer;
+}

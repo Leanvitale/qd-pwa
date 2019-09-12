@@ -1,0 +1,69 @@
+.cardImg {
+    width: 100%;
+    height: auto;
+    border-radius: 27px 27px 0px 0px;
+}
+
+.imgOng {
+    width: 15px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.btn-primary-qd {
+    font-size: 17px;
+    padding: 15px 27px;
+}
+
+.fix-btn {
+    margin-top: -12px;
+}
+
+.bd-card {
+    padding: 21px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+h4 {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #918D8D !important;
+}
+
+.fa {
+    font-size: 21px;
+    color: #4D86FF;
+}
+
+.intro {
+    color: #7D7D7D;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.txt-collected {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0px 21px;
+    text-align: left;
+    padding-bottom: 12px;
+}
+
+.fix-space {
+    margin: 0px;
+    padding: 0px;
+}
+
+.fa-times-circle {
+    font-size: 36px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}

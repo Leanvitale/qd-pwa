@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { images } from '../../../environments/environment';
 
 @Component({
   selector: 'app-ongs',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ongs.component.css']
 })
 export class OngsComponent implements OnInit {
+
+  public ONGS_IMG = images.ongs;
 
   constructor() { }
 

@@ -1,0 +1,39 @@
+<img [src]="imgContacto" alt="">
+
+<div class="text-center">
+    <h1>¿TE PODEMOS<br>AYUDAR CON ALGO?</h1>
+
+    <form [formGroup]="formContact" class="bg-form">
+        
+        <!-- Name -->
+        <div class="form-group col-12" [ngClass]="{ 'has-danger': !formContact.get('name').valid && formContact.get('name').touched && formContact.status === 'INVALID', 'has-success': formContact.get('name').valid }">
+            <input type="text" formControlName="name" class="form-control input-contact" id="name" maxlength="60" placeholder="Nombre Completo">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group col-12" [ngClass]="{ 'has-danger': !formContact.get('email').valid && formContact.get('email').touched && formContact.status === 'INVALID', 'has-success': formContact.get('email').valid }">
+            <input type="text" formControlName="email" class="form-control input-contact" id="email" maxlength="60" placeholder="Email">
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group col-12" [ngClass]="{ 'has-danger': !formContact.get('phone').valid && formContact.get('phone').touched && formContact.status === 'INVALID', 'has-success': formContact.get('phone').valid }">
+            <input type="text" formControlName="phone" class="form-control input-contact" id="phone" maxlength="60" placeholder="Celular">
+        </div>
+
+        <!-- Comment -->
+        <div class="form-group col-12" [ngClass]="{ 'has-danger': !formContact.get('comment').valid && formContact.get('comment').touched && formContact.status === 'INVALID', 'has-success': formContact.get('comment').valid }">
+            <textarea rows="3" type="text" formControlName="comment" class="form-control input-contact" id="comment" maxlength="1200" placeholder="Dejanos tu comentario a continuación.."> </textarea>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col-6">
+                <button class="btn-primary-qd btn-back" (click)="back();">Volver</button>
+            </div>
+            <div class="col-6">
+                <button class="btn-primary-qd" (click)="enviar();" [disabled]="!formContact.valid">Enviar</button>
+            </div>
+        </div>
+        
+    </form>
+
+</div>

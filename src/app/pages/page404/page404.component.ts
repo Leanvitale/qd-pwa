@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { images } from '../../../environments/environment';
 
 @Component({
   selector: 'app-page404',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page404.component.css']
 })
 export class Page404Component implements OnInit {
+
+  public imgError = images.error404;
 
   constructor() { }
 

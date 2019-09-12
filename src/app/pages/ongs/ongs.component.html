@@ -1,1 +1,43 @@
-<p>ongs works!</p>
+<div class="animated fadeIn slow">
+    <!-- Imagen de la Seccion -->
+    <img [src]="ONGS_IMG" class="category-img">
+
+    <!-- Titulo de la Seccion -->
+    <h1>Instituciones</h1>
+
+    <div class="text-center m-5">
+        <a [routerLink]="['/ongs']" class="btn-primary-qd">Sumá tu Institución</a>
+    </div>
+
+    <h2>Elegí a que institución<br>querés ayudar</h2>
+
+    <div class="link mb-3">
+        Conocé qué son los ODS
+    </div>
+
+    <div class="bg-list-ongs">
+        <app-card-ong></app-card-ong>
+        <app-card-ong></app-card-ong>
+        <app-card-ong></app-card-ong>
+        <app-card-ong></app-card-ong>
+        <app-card-ong></app-card-ong>
+        <app-card-ong></app-card-ong>
+        <app-card-ong></app-card-ong>
+        <app-card-ong></app-card-ong>
+        <app-card-ong></app-card-ong>
+        <app-card-ong></app-card-ong>
+    </div>
+
+    <h2>Tenes o formas parte<br>de una Institución?</h2>
+
+    <div class="text-center m-5">
+        <a [routerLink]="['/ongs']" class="btn-primary-qd">Sumá tu Institución</a>
+    </div>
+
+</div>
+
+<!-- Footer Page -->
+<app-footer></app-footer>
+
+<!-- Bottom Menu -->
+<app-bottom-menu></app-bottom-menu>

@@ -1,1 +1,21 @@
-<p>top-bar works!</p>
+<div class="row nav-bar shadow-top justify-content-between">
+    <!-- Logo QuieroDonar -->
+    <div class="col-auto align-self-center">
+        <a [routerLink]="['']"><img [src]="LOGO_IMG" class="logo"></a>
+    </div>
+
+    <!-- Oopciones Izquierdas -->
+    <div class="col-auto align-self-center">
+        <div class="row">
+            <!-- Lupa de Busqueda -->
+            <div class="col-auto align-self-center">
+                <i class="fa" (click)="goSearch();" [ngClass]="{'fa-search': !buscador, 'fa-times': buscador}"></i>
+            </div>
+            
+            <!-- Profile Image -->
+            <div class="col-auto align-self-center hide profile-img">
+                <p>Chau</p>
+            </div>
+        </div>
+    </div>
+</div>

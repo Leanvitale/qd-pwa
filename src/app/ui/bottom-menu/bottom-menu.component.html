@@ -1,19 +1,34 @@
 <div class="container-bot">
     <div class="row justify-content-between">
         <div class="col-auto">
-            <i class="far fa-smile"></i>
+            <!-- Navigate to Home -->
+            <img [src]="imgHome" class="imgMenu" (click)="navigateTo('/')">
+            <div class="txt-menu" [ngClass]="{'actived': route === ''}">Inicio</div>
+            <!-- <i class="fa fa-eercast" [ngClass]="{'active': route === ''}" (click)="navigateTo('/')"></i> -->
         </div>
         <div class="col-auto">
-            <i class="far fa-smile"></i>
+            <!-- Navigate to ONGs Page -->
+            <img [src]="imgOngs" class="imgMenu" (click)="navigateTo('/ongs')">
+            <div class="txt-menu" [ngClass]="{'actived': route === '/ongs'}">Instituciones</div>
+            <!-- <i class="fa fa-eercast" [ngClass]="{'active': route === '/ongs'}" (click)="navigateTo('/ongs')"></i> -->
         </div>
         <div class="col-auto">
-            <i class="far fa-smile"></i>
+            <!-- Navigate to Causas Page -->
+            <img [src]="imgCausas" class="imgMenu" (click)="navigateTo('/causas')">
+            <div class="txt-menu" [ngClass]="{'actived': route === '/causas'}">Causas</div>
+            <!-- <i class="fa fa-eercast" [ngClass]="{'active': route === '/causas'}" (click)="navigateTo('/causas')"></i> -->
         </div>
         <div class="col-auto">
-            <i class="far fa-smile"></i>
+            <!-- Navigate to Eventos Page -->
+            <img [src]="imgEventos" class="imgMenu" (click)="navigateTo('/eventos')">
+            <div class="txt-menu" [ngClass]="{'actived': route === '/eventos'}">Eventos</div>
+            <!-- <i class="fa fa-eercast" [ngClass]="{'active': route === '/eventos'}" (click)="navigateTo('/eventos')"></i> -->
         </div>
         <div class="col-auto">
-            <i class="far fa-smile"></i>
+            <!-- Navigate to Perfil Page -->
+            <img [src]="imgPerfil" class="imgMenu" (click)="navigateTo('/perfil')">
+            <div class="txt-menu" [ngClass]="{'actived': route === '/perfil'}">Perfil</div>
+            <!-- <i class="fa fa-eercast" [ngClass]="{'active': route === '/perfil'}" (click)="navigateTo('/perfil')"></i> -->
         </div>
     </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { images } from '../../../environments/environment';
 
 @Component({
   selector: 'app-eventos',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./eventos.component.css']
 })
 export class EventosComponent implements OnInit {
+
+  public EVENTOS_IMG = images.eventos;
 
   constructor() { }
 
