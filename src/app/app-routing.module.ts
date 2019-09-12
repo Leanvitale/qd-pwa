@@ -34,11 +34,11 @@ const routes: Routes = [
   // Contacto
   { path: 'contacto', component: ContactoComponent },
   // URL no encontrada
-  { path: '404', component: Page404Component },
+  { path: 'error', component: Page404Component },
   // Perfil para Causa / Maraton / Evento / Nota / Etc
   { path: ':fundacion/:alias', component: PerfilEmcnComponent },
   // Path default
-  { path: '**', redirectTo: '404' }
+  { path: '**', redirectTo: 'error' }
 ];
 
 @NgModule({
