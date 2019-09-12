@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { EventosComponent } from './pages/eventos/eventos.component';
 import { CausasComponent } from './pages/causas/causas.component';
 import { OngsComponent } from './pages/ongs/ongs.component';
-import { Page404Component } from './pages/page404/page404.component';
+import { PageErrorComponent } from './pages/page-error/page-error.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { RegistrarComponent } from './pages/registrar/registrar.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -34,7 +34,7 @@ const routes: Routes = [
   // Contacto
   { path: 'contacto', component: ContactoComponent },
   // URL no encontrada
-  { path: 'error', component: Page404Component },
+  { path: 'error', component: PageErrorComponent },
   // Perfil para Causa / Maraton / Evento / Nota / Etc
   { path: ':fundacion/:alias', component: PerfilEmcnComponent },
   // Path default

@@ -11,7 +11,7 @@ import { CausasComponent } from './pages/causas/causas.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { RegistrarComponent } from './pages/registrar/registrar.component';
-import { Page404Component } from './pages/page404/page404.component';
+import { PageErrorComponent } from './pages/page-error/page-error.component';
 import { HomeComponent } from './pages/home/home.component';
 import { TopBarComponent } from './ui/top-bar/top-bar.component';
 import { BottomMenuComponent } from './ui/bottom-menu/bottom-menu.component';
@@ -41,7 +41,7 @@ import { LoaderComponent } from './ui/loader/loader.component';
     EventosComponent,
     PerfilComponent,
     RegistrarComponent,
-    Page404Component,
+    PageErrorComponent,
     HomeComponent,
     TopBarComponent,
     BottomMenuComponent,
