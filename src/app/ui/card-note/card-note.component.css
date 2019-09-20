@@ -1,0 +1,62 @@
+
+.card {
+    width: 85%;
+    border: 0px;
+    margin: 0px 15px;
+    color: #2D2D2D;
+    border-radius: 27px;
+    background: white;
+    display: inline-block;
+    white-space: initial;
+}
+
+.imgNote {
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+    width: 100%;
+    height: auto;
+}
+
+h6 {
+    font-weight: 700;
+    color: #2d2d2d;
+    text-align: left;
+    margin: 6px 21px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.comment {
+    font-weight: 300;
+    color: #616161;
+    margin: 0px 21px;
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.fix-row {
+    margin: 0px 21px !important;
+}
+
+.txt-second {
+    font-size: 12px;
+    color: #2d2d2d;
+    font-weight: 400;
+}
+
+.fa {
+    font-size: 21px;
+    color: #4D86FF;
+}
+
+.fa-times-circle {
+    font-size: 36px;
+    cursor: pointer;
+    margin-bottom: 9px;
+    margin-top: 15px;
+}
+
+.img-shared {
+    width: 21px;
+}

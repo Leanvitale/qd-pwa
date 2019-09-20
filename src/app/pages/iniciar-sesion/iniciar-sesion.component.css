@@ -1,0 +1,57 @@
+.bg-login {
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img-register {
+    width: 120px;
+}
+
+.btn-google {
+    background: #F6F6F6;
+    font-weight: 300;
+    text-align: center;
+    color: #2d2d2d;
+    font-size: 18px;
+    padding: 9px 15px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+.btn-facebook {
+    background: #325CA9;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 9px 15px;
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 21px;
+}
+
+.input-login {
+    background: #F6F6F6;
+    font-weight: 300;
+    text-align: left;
+    color: #2d2d2d;
+    font-size: 18px;
+    padding: 9px 15px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+.btn-primary-qd {
+    padding: 9px 18px !important;
+}
+
+.fa {
+    position: absolute;
+    left: 21px;
+    font-size: 24px;
+}
+
+.fa-google {
+    color: red;
+}

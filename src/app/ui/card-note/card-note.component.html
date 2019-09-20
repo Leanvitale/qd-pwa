@@ -1,0 +1,41 @@
+<div class="card shadow-card text-center">
+    <img [src]="note.img" class="imgNote">
+
+    <!-- Cuerpo Nota -->
+    <div *ngIf="!shared">
+        <h6>{{ note.name }}</h6>
+        <p class="comment">
+            {{ note.description | truncate:['140', '..'] }}
+        </p>
+        <div class="row m-0 p-0 fix-row">
+            <div class="col-6 m-0 p-0 text-left txt-second">
+                {{ note.date }}
+            </div>
+            <div class="col-6 m-0 p-0 text-right txt-second">
+                por {{ note.author }}
+            </div>
+        </div>
+        <div class="text-right">
+            <span class="cita">{{ note.position }}</span>
+        </div>
+
+        <div class="row m-0 p-0 mt-3">
+            <!-- Compartir Button -->
+            <div (click)="changeShared();" class="col-6 align-self-center fix-space">
+                <img [src]="imgShared" class="img-shared">
+            </div>
+            <a [routerLink]="['/perfil']" class="col-6 align-self-center fix-space btn-profile">
+                Leer Nota
+            </a>
+        </div>
+    </div>
+    <!-- Fin Cuerpo Nota -->
+
+    <!-- Compartir Cuerpo -->
+    <div *ngIf="shared">
+        <i class="fa fa-times-circle" aria-hidden="true" (click)="changeShared();"></i>
+        <app-shared></app-shared>
+    </div>
+    <!-- Fin Compartir Cuerpo -->
+
+</div>

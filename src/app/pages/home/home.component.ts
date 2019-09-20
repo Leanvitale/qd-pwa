@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { images } from '../../../environments/environment';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,13 +10,18 @@ import { images } from '../../../environments/environment';
 export class HomeComponent implements OnInit {
 
   public HOME_IMG = images.home;
+  public FAQS_IMG = images.faqs;
   public tabShow: number;
 
-  constructor() {
+  constructor(private router: Router) {
     this.tabShow = 1;
   }
 
   ngOnInit() {
+  }
+
+  navegar(ruta: string) {
+    this.router.navigate([ruta]);
   }
 
 }

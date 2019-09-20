@@ -2,7 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { environment } from '../environments/environment';
+
 import { ToastrModule } from 'ngx-toastr';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +35,10 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { SharedComponent } from './ui/shared/shared.component';
 import { PerfilEmcnComponent } from './pages/perfil-emcn/perfil-emcn.component';
 import { LoaderComponent } from './ui/loader/loader.component';
+import { PerfilOngComponent } from './pages/perfil-ong/perfil-ong.component';
+import { LastNotesComponent } from './ui/last-notes/last-notes.component';
+import { CardNoteComponent } from './ui/card-note/card-note.component';
+import { FaqsComponent } from './pages/faqs/faqs.component';
 
 
 @NgModule({
@@ -58,7 +66,11 @@ import { LoaderComponent } from './ui/loader/loader.component';
     ContactoComponent,
     SharedComponent,
     PerfilEmcnComponent,
-    LoaderComponent
+    LoaderComponent,
+    PerfilOngComponent,
+    LastNotesComponent,
+    CardNoteComponent,
+    FaqsComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +78,9 @@ import { LoaderComponent } from './ui/loader/loader.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebase, 'qd-pwa'),
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

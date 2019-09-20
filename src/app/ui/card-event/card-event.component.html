@@ -38,7 +38,7 @@
         <div class="row align-items-center fix-space">
             <!-- Compartir Button -->
             <div (click)="changeShared();" class="col-6 align-self-center fix-space">
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    <img [src]="imgShared" class="img-shared">
             </div>
             <!-- Go Profile Button -->
             <a [routerLink]="['/perfil']" class="col-6 align-self-center fix-space btn-profile">

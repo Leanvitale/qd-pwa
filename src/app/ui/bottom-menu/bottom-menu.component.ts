@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { images } from '../../../environments/environment';
+import { AngularFireAuth } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-bottom-menu',
@@ -18,7 +19,8 @@ export class BottomMenuComponent implements OnInit {
   public imgPerfil: string;
 
   constructor(private router: Router,
-              private location: Location) { }
+              private location: Location,
+              public afAuth: AngularFireAuth) { }
 
   ngOnInit() {
     this.setImg();

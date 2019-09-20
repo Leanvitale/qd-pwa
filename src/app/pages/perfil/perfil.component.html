@@ -1,7 +1,12 @@
-<p>perfil works!</p>
+<div class="bg-profile text-center" *ngIf="afAuth.user | async as user; else showLogin">
+    <h2>Estas Registrado!</h2><br><br>
+    <h3>Que queres hacer?</h3>
+    <button (click)="logOut()">Cerrar Sesion</button>
+</div>
 
-<!-- Footer Page -->
-<app-footer></app-footer>
+<ng-template #showLogin>
+    <app-iniciar-sesion ></app-iniciar-sesion>
+</ng-template>
 
 <!-- Bottom Menu -->
 <app-bottom-menu></app-bottom-menu>

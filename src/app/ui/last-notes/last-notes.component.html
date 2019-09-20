@@ -1,0 +1,5 @@
+<h2>Ultimas Notas<br>de nuestro Blog</h2>
+
+<div class="scrolling-wrapper" *ngIf="notes" >
+    <app-card-note [note]="note" *ngFor="let note of notes"></app-card-note>
+</div>

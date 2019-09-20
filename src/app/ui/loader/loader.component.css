@@ -21,9 +21,9 @@
     right: 0;
     background: #FFFFFF;
     border-radius: 50%;
-    border-top: 3px solid #005cb9;
-    border-right: 3px solid #005cb9;
-    border-bottom: 3px solid #005cb9;
+    border-top: 5px solid #005cb9;
+    border-right: 5px solid #005cb9;
+    border-bottom: 5px solid #005cb9;
     animation: animate 2s linear infinite;
 }
 
@@ -34,9 +34,9 @@
     right: 17px;
     background: #FFFFFF;
     border-radius: 50%;
-    border-top: 3px solid #62BCDD;
-    border-right: 3px solid #62BCDD;
-    border-left: 3px solid #62BCDD;
+    border-top: 5px solid #62BCDD;
+    border-right: 5px solid #62BCDD;
+    border-left: 5px solid #62BCDD;
     animation: animate 2s linear reverse infinite;
 }
 
@@ -47,9 +47,9 @@
     right: 34px;
     background: #FFFFFF;
     border-radius: 50%;
-    border-right: 3px solid #005cb9;
-    border-top: 3px solid #005cb9;
-    border-bottom: 3px solid #005cb9;
+    border-right: 5px solid #005cb9;
+    border-top: 5px solid #005cb9;
+    border-bottom: 5px solid #005cb9;
     animation: animate 2s linear reverse infinite;
 }
 
@@ -63,15 +63,15 @@
 }
 
 .loader .face.face1 .circle {
-    transform: rotate(135deg);
+    transform: rotate(134deg);
 }
 
 .loader .face.face2 .circle {
-    transform: rotate(-225deg);
+    transform: rotate(-226deg);
 }
 
 .loader .face.face3 .circle {
-    transform: rotate(225deg);
+    transform: rotate(226deg);
 }
 
 .loader .face .circle::before {
@@ -81,8 +81,8 @@
     height: 12px;
     border-radius: 50%;
     background: #000;
-    top: -6px;
-    right: -6px;
+    top: -7px;
+    right: -7px;
 }
 
 .loader .face.face1 .circle::before {

@@ -1,5 +1,10 @@
 export const environment = {
-  production: true
+  production: true,
+  firebase: {
+    apiKey: 'AIzaSyA7CSpiQn-8ngGyRU5Ngwn8C7i-lYeu82w',
+    authDomain: 'kindapp-5fc79.firebaseapp.com',
+    projectId: 'kindapp-5fc79'
+  }
 };
 
 export const images = {
@@ -23,4 +28,7 @@ export const images = {
   bgComments: './assets/img/bgComments.svg',
   contacto: './assets/img/contact-img.svg',
   error404: './assets/img/error-404.svg',
+  icShared: './assets/img/ic-shared.svg',
+  faqs: './assets/img/faqs.svg',
+  register: './assets/img/register.svg'
 };

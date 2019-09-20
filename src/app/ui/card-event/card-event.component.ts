@@ -9,6 +9,7 @@ import { images } from '../../../environments/environment';
 export class CardEventComponent implements OnInit {
 
   public imgOng = images.unMenuOngs;
+  public imgShared = images.icShared;
   public description: string;
   public institucion: string;
   public shared: boolean;

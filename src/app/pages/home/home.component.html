@@ -1,6 +1,6 @@
-<div class="animated fadeIn slow mb-container">
+<div class="animated fadeIn slow mb-container text-center">
     <!-- Imagen de la Seccion -->
-    <img [src]="HOME_IMG" class="category-img">
+    <img [src]="HOME_IMG" class="category-img img-faqs mt-4 mb-2">
 
     <!-- Titulo de la Seccion -->
     <h1>¿Querés ayudar<br>a otra persona?</h1>
@@ -9,32 +9,32 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
     </p>
 
-    <h2 class="fix-top-45">Causa e Institución<br>destacadas del mes</h2>
+    <h2 class="fix-top-45">Institución y Causa<br>destacadas del mes</h2>
 
     <!-- Tabs Section -->
     <div class='tabs'>
 
         <!-- Tab 1 -->
         <input type='radio' id='r1' name='t' checked (click)="tabShow = 1">
-        <label for='r1'>Causa</label>
+        <label for='r1'>Institución</label>
 
         <!-- Tab 2 -->
-        <input type='radio' id='r2' name='t' (click)="tabShow = 2">
-        <label for='r2'>Institución</label>
-        
+        <input type='radio' id='r2' name='t'  (click)="tabShow = 2">
+        <label for='r2'>Causa</label>
+
         <div id='slider'></div>
 
     </div>
 
-    <!-- Content Tab Causa -->
+    <!-- Content Tab Instucion -->
     <div class='content-tab animated fadeIn slow' *ngIf="tabShow === 1">
         <!-- Card Causa Destacada -> Enviar el Objeto Causa -->
-        <app-card-event></app-card-event>
+        <app-card-ong></app-card-ong>
     </div>
 
-    <!-- Content Tab Instucion -->
+    <!-- Content Tab Causa -->
     <div class='content-tab animated fadeIn slow' *ngIf="tabShow === 2">
-        <app-card-ong></app-card-ong>
+        <app-card-event></app-card-event>
     </div>
 
     <div class="text-center m-5">
@@ -44,13 +44,18 @@
     <!-- Comentarios de la Comunidad -->
     <app-comments-community></app-comments-community>
 
-    <!-- Contactanos -->
+
+    <!-- Ultimas Notas del Blog -->
+    <app-last-notes></app-last-notes>
 
     <div class="text-center mt-5">
-        <h2>¿No sabés cual es el mejor plan para tu Institución?</h2>
-        <h6>Nacimos para ayudarte</h6>
+        <img [src]="FAQS_IMG" class="img-faqs">
+        <h2>Preguntas?</h2>
+        <h6>Encontrá acá toda la información que necesitás en:</h6>
         <br>
-        <a [routerLink]="['/contacto']" class="btn-primary-qd mt-4" >Contactanos</a>
+        <div class="link-primary-qd" (click)="navegar('/faqs');">
+            Visitá nuestra seccion<br>de Preguntas Frecuentes
+        </div>
     </div>
 
 </div>

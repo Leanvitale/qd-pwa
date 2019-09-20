@@ -13,6 +13,7 @@ import { IniciarSesionComponent } from './pages/iniciar-sesion/iniciar-sesion.co
 import { BuscadorComponent } from './pages/buscador/buscador.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { PerfilEmcnComponent } from './pages/perfil-emcn/perfil-emcn.component';
+import { FaqsComponent } from './pages/faqs/faqs.component';
 
 const routes: Routes = [
   // Home QD
@@ -33,6 +34,8 @@ const routes: Routes = [
   { path: 'buscar', component: BuscadorComponent },
   // Contacto
   { path: 'contacto', component: ContactoComponent },
+  // FAQs
+  { path: 'faqs', component: FaqsComponent },
   // URL no encontrada
   { path: 'error', component: PageErrorComponent },
   // Perfil para Causa / Maraton / Evento / Nota / Etc
